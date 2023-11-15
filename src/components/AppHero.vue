@@ -17,15 +17,12 @@ export default  {
 </script>
 
 <template>
-    <div class="container-md"></div>
+    
 </template>
 
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
 
-.container{
-    max-width: 1920px;
-    margin: 0 auto;
 
-}
+
 </style>

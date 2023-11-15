@@ -17,10 +17,11 @@ export default  {
 </script>
 
 <template>
-    <div>footer</div>
+    <div class="container-md"></div>
 
 </template>
 
 <style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
 
 </style>

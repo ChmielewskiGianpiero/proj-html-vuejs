@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul,ol, menu {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+button{
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    background: transparent;
+}
+
+.container-md {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row{
+    display: flex;
+}
+
+ .gap {
+    display: flex;
+    gap: 10px;
+ }
+
+// .justify-between{
+//     justify-content: space-between;
+// }
