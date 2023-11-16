@@ -32,7 +32,7 @@ export default  {
             </div>
             <div class="row app-nav-menu">
                 <img src="/public/mt-2236-home-logo.png" alt="">
-                <ul class="gap">
+                <ul class="row">
                     <li class="menu-item" v-for="(link,i) in menu" :key="i">
                         <a :href="link.href"> {{ link.text }} </a> 
                     </li>
@@ -46,34 +46,36 @@ export default  {
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
 
+.app-nav{
+    background-color: $dark_trasparent;
+    padding: 10px;
+    color: $primary_color;
+    font-size: 12px;
+}
 
+.row{
+    justify-content: space-between;
+}
 
 .app-nav-contacts{
-    font-size: 12px;
-
     .app-nav-address:hover,
     .phone-contact:hover{
         color: $secondary_color;
     }
 }
 
-.app-nav-menu{
-    margin: 15px 0px;
-
-    li:hover{
-        color: $secondary_color;
-    }
-}
-
-.app-nav{
-    background-color: $dark_grey;
-    padding: 10px;
-    color: $primary_color;
-    font-size: 15px;
-}
-
 .nav-icon{
     color: $secondary_color;
+}
+
+.app-nav-info{
+    display: flex;
+    gap: 110px;
+}
+
+.app-nav-info,
+.row{
+    align-items: center;
 }
 
 .btn-nav{
@@ -85,23 +87,17 @@ export default  {
     padding: 10px 55px;
 }
 
+.app-nav-menu{
+    margin: 15px 0px;
+    font-size: 15px;
 
-.app-nav-info{
-    display: flex;
-    gap: 110px;
-}
+    .row{
+        gap: 20px;
+    }
 
-.row{
-    justify-content: space-between;
-}
-
-.app-nav-info,
-.row{
-    align-items: center;
-}
-
-.gap{
-    gap: 15px;
+    li:hover{
+        color: $secondary_color;
+    }
 }
 
 </style>
