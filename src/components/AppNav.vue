@@ -1,19 +1,15 @@
 <script>
 
-
 export default  {
     props: {
-        
-    },
-    data (){
-      return {
-    }
-    },
-    methods:{
-
-    },
-    created (){
-      
+        contactsProps: {
+            type: Object,
+            required: true
+        },
+        menu: {
+            type: Object,
+            required: true
+        }
     }
 }
 </script>
@@ -21,22 +17,26 @@ export default  {
 <template>
     <nav class="app-nav">
         <div class="container-md">
-            <div class="row">
+            <div class="row app-nav-contacts">
                 <div class="app-nav-address gap">
                     <font-awesome-icon icon="location-dot" class="nav-icon"/>
-                    <span>  </span>
+                    <a href="#"> {{ contactsProps.address }} </a>
                 </div>
                 <div class="app-nav-info">
                     <div class="phone-contact gap">
                         <font-awesome-icon icon="phone" class="nav-icon"/>
-                        <span>Lorem ipsum dolor sit amet.</span>
+                        <a href="#">Call now {{ contactsProps.phoneNumber }}</a>
                     </div>
                     <button class="btn-nav">Donate</button>
                 </div>
             </div>
-            <div class="row">
-                <div>logo</div>
-                <div>menu</div>
+            <div class="row app-nav-menu">
+                <img src="/public/mt-2236-home-logo.png" alt="">
+                <ul class="gap">
+                    <li class="menu-item" v-for="(link,i) in menu" :key="i">
+                        <a :href="link.href"> {{ link.text }} </a> 
+                    </li>
+                </ul>
             </div>
         </div>
         
@@ -45,9 +45,29 @@ export default  {
 
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
+
+
+
+.app-nav-contacts{
+    font-size: 12px;
+
+    .app-nav-address:hover,
+    .phone-contact:hover{
+        color: $secondary_color;
+    }
+}
+
+.app-nav-menu{
+    margin: 15px 0px;
+
+    li:hover{
+        color: $secondary_color;
+    }
+}
+
 .app-nav{
     background-color: $dark_grey;
-    padding: 20px;
+    padding: 10px;
     color: $primary_color;
     font-size: 15px;
 }
@@ -79,4 +99,9 @@ export default  {
 .row{
     align-items: center;
 }
+
+.gap{
+    gap: 15px;
+}
+
 </style>

@@ -1,10 +1,14 @@
 <script>
+import { store } from '../store'
 
 
 export default  {
+  props : {
+
+  },
   data (){
       return {
-        
+        store: store
     }
   },
   methods:{

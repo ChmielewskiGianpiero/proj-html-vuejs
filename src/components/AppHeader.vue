@@ -1,6 +1,8 @@
 <script>
 import AppNav from './AppNav.vue';
 import AppHero from './AppHero.vue';
+import { store } from '../store';
+
 
 
 
@@ -10,6 +12,7 @@ export default  {
 },
     data (){
       return {
+        store: store
     }
   },
     methods:{
@@ -23,7 +26,9 @@ export default  {
 
 <template>
     <div class="app-header-bg">
-        <AppNav />
+        <AppNav
+        :contactsProps="store.contacts"
+        :menu="store.navMenu"/>
         <AppHero/>
     </div>
 </template>
