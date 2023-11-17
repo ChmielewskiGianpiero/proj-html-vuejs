@@ -68,6 +68,27 @@ export const store = reactive ({
       {
         src: '/public/mt-2236-home-gallery4.jpg'
       }
+    ],
+
+    cards: [
+      {
+        srcPath: '/public/mt-2236-home-img1.jpg',
+        title: "Garry Kasparov's Masterclass",
+        text: 'Learn the tips, tricks, and strategies from one of the best masters',
+        price: '$456'
+      },
+      {
+        srcPath: '/public/mt-2236-home-img2.jpg',
+        title: "Online Chess Lessons for Beginners",
+        text: 'Catered to adult beginners who have hours a week to practice',
+        price: '$205'
+      },
+      {
+        srcPath: '/public/mt-2236-home-img3.jpg',
+        title: "International Chess School Online",
+        text: 'Chess lessons for children and adults held completely online',
+        price: '$356'
+      },
     ]
 }
 )

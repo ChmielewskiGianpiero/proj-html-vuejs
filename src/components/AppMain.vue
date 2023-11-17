@@ -1,11 +1,12 @@
 <script>
 import AppSectionServices from './AppSectionServices.vue';
 import AppSectionPhoto from './AppSectionPhoto.vue';
+import AppSectionCards from './AppSectionCards.vue';
 import { store } from '../store';
 
 export default  {
   components:{
-    AppSectionServices,AppSectionPhoto
+    AppSectionServices,AppSectionPhoto,AppSectionCards
   },
   data (){
       return {
@@ -24,6 +25,7 @@ export default  {
 <template>
     <AppSectionServices :item="store.educationCard"/>
     <AppSectionPhoto :item="store.gallery"/>
+    <AppSectionCards :item="store.cards"/>
 
 
 </template>
