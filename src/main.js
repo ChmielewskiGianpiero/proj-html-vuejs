@@ -4,9 +4,9 @@ import App from './App.vue'
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faLocationDot, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { faLocationDot, faPhone, faChessPawn} from '@fortawesome/free-solid-svg-icons'
 
-library.add( faLocationDot, faPhone )
+library.add( faLocationDot, faPhone, faChessPawn)
 
 createApp(App)
 .component('font-awesome-icon', FontAwesomeIcon)

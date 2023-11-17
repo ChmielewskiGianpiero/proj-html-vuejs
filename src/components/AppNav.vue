@@ -19,12 +19,12 @@ export default  {
         <div class="container-md">
             <div class="row app-nav-contacts">
                 <div class="app-nav-address gap">
-                    <font-awesome-icon icon="location-dot" class="nav-icon"/>
+                    <font-awesome-icon icon="location-dot" class="icon-color"/>
                     <a href="#"> {{ contactsProps.address }} </a>
                 </div>
                 <div class="app-nav-info">
                     <div class="phone-contact gap">
-                        <font-awesome-icon icon="phone" class="nav-icon"/>
+                        <font-awesome-icon icon="phone" class="icon-color"/>
                         <a href="#">Call now {{ contactsProps.phoneNumber }}</a>
                     </div>
                     <button class="btn-nav">Donate</button>
@@ -64,7 +64,7 @@ export default  {
     }
 }
 
-.nav-icon{
+.icon-color{
     color: $secondary_color;
 }
 

@@ -22,8 +22,8 @@ export default  {
           <h1>ACADEMIC CHESS FOR <em>EVERYONE</em></h1>
           <p>we are dedicated to broadening and developing chess as art, recreation, and as a significant element of culture in Northern California.</p>
           <div class="hero-btn">
-            <button class="btn">Enroll Now</button>
-            <button class="btn">Learn More</button>
+            <a href="#" class="btn">Enroll Now</a>
+            <a href="#" class="btn">Learn More</a>
           </div>
         </div>
       </div>
@@ -66,10 +66,6 @@ p {
   border-radius: 20px;
 }
 
-button{
-  color: $primary_color;
-}
-
 .hero-btn{
   display: flex;
   gap: 25px;
@@ -87,7 +83,7 @@ button{
   padding: 10px 40px;
   border-radius: 5px;
   font-weight: bold;
-
+  color: $primary_color;
 }
 
 

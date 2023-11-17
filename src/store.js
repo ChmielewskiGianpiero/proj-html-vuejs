@@ -35,6 +35,24 @@ export const store = reactive ({
             text: 'Contact Us',
             href: '#'
         },
-    ]
+    ],
+
+    educationCard : [
+        {
+          text: 'Build self-regulation and motivation'
+        },
+        {
+          text: 'Help with concentration issues'
+        },
+        {
+          text: 'Learn to plan, organize, and prioritize'
+        },
+        {
+          text: 'Regulate emotions'
+        },
+        {
+          text: 'Learn to pay attention to detail'
+        }
+  ]
 }
 )

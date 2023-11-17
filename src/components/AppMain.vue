@@ -1,10 +1,14 @@
 <script>
-
+import AppSectionServices from './AppSectionServices.vue';
+import { store } from '../store';
 
 export default  {
+  components:{
+    AppSectionServices
+  },
   data (){
       return {
-        
+        store: store
     }
   },
   methods:{
@@ -17,7 +21,7 @@ export default  {
 </script>
 
 <template>
-    <div class="container-md"></div>
+    <AppSectionServices :item="store.educationCard"/>
 </template>
 
 <style lang="scss" scoped>

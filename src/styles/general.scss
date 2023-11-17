@@ -33,13 +33,26 @@ button{
 
 .row{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 
- .gap {
+.gap {
+    display: flex;
     gap: 10px;
  }
 
-// .justify-between{
-//     justify-content: space-between;
-// }
+.col-6{
+    flex-basis: calc((100% / 12 ) * 6);
+}
+
+.col-12{
+    flex-basis: calc((100% / 12) * 12);
+}
+
+.btn{
+    padding: 10px 40px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #ffffff;
+}
+

@@ -1,6 +1,6 @@
 <script>
-import AppNav from './AppNav.vue';
-import AppHero from './AppHero.vue';
+import AppNav from './appnav.vue';
+import AppHero from './apphero.vue';
 import { store } from '../store';
 
 
