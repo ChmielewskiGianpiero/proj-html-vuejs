@@ -22,26 +22,32 @@ export default  {
 </script>
 
 <template>
-  <div class="container-md">
-    <div class="title-section">
-        <h1>Our Events</h1>
-        <p>Chess is fun and we are happy to prove it at our events!</p>
+    <div class="section-events">
+        <div class="container-md">
+            <div class="title-section">
+                <h1>Our Events</h1>
+                <p>Chess is fun and we are happy to prove it at our events!</p>
+            </div>
+            <div class="row" v-for="(event,i) in item" :key="i">
+                <img :src="event.srcPath" alt="">
+                <div class="text-row">
+                    <h2> {{ event.title }} </h2>
+                    <p> {{ event.text }} </p>
+                </div>
+                <div class="btn-section">
+                <a class="btn" href="#">Register</a>
+                </div>
+            </div>
+         </div>
     </div>
-    <div class="row" v-for="(event,i) in item" :key="i">
-        <img :src="event.srcPath" alt="">
-        <div class="text-row">
-            <h2> {{ event.title }} </h2>
-            <p> {{ event.text }} </p>
-        </div>
-        <div class="btn-section">
-          <a class="btn" href="#">Register</a>
-        </div>
-    </div>
-  </div>
 </template>
 
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
+
+.section-events {
+    padding-bottom: 70px;
+}
 
 .title-section{
     text-align: center;

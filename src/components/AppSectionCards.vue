@@ -22,32 +22,33 @@ export default  {
 </script>
 
 <template>
-    <div class="container-md">
-        <div class="title-cards">
-            <h3>Courses</h3>
-            <p>To keep up with the constantly rising standards of play</p>
-        </div>
-        <div class="row">
-            <div class="col" v-for="(card,i) in item" :key="i">
-                <div class="card">
-                    <div class="card-header">
-                        <img class="card-img" :src="card.srcPath" alt="">
-                    </div>
-                    <div class="card-body">
-                        <h4 class="card-title"> {{ card.title }} </h4>
-                        <p class="card-text"> {{ card.text }} </p>
-                        <div class="price"> {{ card.price }} </div>
-                        <div class="btn-card">
-                            <a class="btn" href="#">View More</a>
+    <div class="section-courses">
+        <div class="container-md">
+            <div class="title-cards">
+                <h3>Courses</h3>
+                <p>To keep up with the constantly rising standards of play</p>
+            </div>
+            <div class="row">
+                <div class="col" v-for="(card,i) in item" :key="i">
+                    <div class="card">
+                        <div class="card-header">
+                            <img class="card-img" :src="card.srcPath" alt="">
+                        </div>
+                        <div class="card-body">
+                            <h4 class="card-title"> {{ card.title }} </h4>
+                            <p class="card-text"> {{ card.text }} </p>
+                            <div class="price"> {{ card.price }} </div>
+                            <div class="btn-card">
+                                    <a class="btn" href="#">View More</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="btn-section"> 
+                <a  href="#">View Other Courses</a>
+            </div>
         </div>
-        <div class="btn-section"> 
-            <a  href="#">View Other Courses</a>
-        </div>
-       
     </div>
 </template>
 
@@ -113,15 +114,15 @@ export default  {
     width: 100%;
 }
 
-.btn-card{
-    display: flex;
-    justify-content: center;
+        .btn-card{
+            display: flex;
+            justify-content: center;
 
-   .btn {
-        background-color: $secondary_color ;
-        color: $dark;
-        font-weight: 100;
-    }
-}
+        .btn {
+                background-color: $secondary_color ;
+                color: $dark;
+                font-weight: 100;
+            }
+        }
 
 </style>

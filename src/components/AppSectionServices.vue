@@ -119,7 +119,7 @@ p,li {
 .cards{
     display: flex;
     flex-wrap: nowrap;
-    gap: 75px;
+    gap: 100px;
     padding-bottom: 100px;
 }
 .icon-color{

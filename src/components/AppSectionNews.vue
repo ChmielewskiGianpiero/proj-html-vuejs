@@ -22,7 +22,7 @@ export default  {
 </script>
 
 <template>
-    <div class="bg-section">
+    <div class="section-news">
         <div class="container-md">
             <div class="row">
                 <div class="col-3">
@@ -45,7 +45,7 @@ export default  {
 @use '../styles/partials/variables' as *;
 
 
-.bg-section {
+.section-news {
     background-color: $bg_grey ;
 }
 
