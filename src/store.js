@@ -89,6 +89,19 @@ export const store = reactive ({
         text: 'Chess lessons for children and adults held completely online',
         price: '$356'
       },
+    ],
+
+    events: [
+      {
+        srcPath: '/public/mt-2236-home-img4.jpg',
+        title: 'Grand Summer Tournament of 2021',
+        text: 'Join us for the Grand Summer Tournament 2021. Held every year on the first Sunday of summer, our Grand Summer Tournament chess masters and beginners from North California. We have competitions for different levels of chess mastery with amazing prizes awarded at each level.'
+      },
+      {
+        srcPath: '/public/mt-2236-home-img5.jpg',
+        title: 'World Chess Day',
+        text: 'Celebrated on July 20 every year, World Chess Day is one of the biggest events at our school. Be ready for fun tournaments and big prizes. Registration is obligatory!'
+      },
     ]
 }
 )

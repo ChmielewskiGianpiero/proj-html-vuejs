@@ -2,7 +2,8 @@
 import AppSectionServices from './AppSectionServices.vue';
 import AppSectionPhoto from './AppSectionPhoto.vue';
 import AppSectionCards from './AppSectionCards.vue';
-import AppSectionBanner from './AppSectionBanner.vue'
+import AppSectionBanner from './AppSectionBanner.vue';
+import AppSectionEvents from './AppSectionEvents.vue';
 import { store } from '../store';
 
 export default  {
@@ -10,7 +11,8 @@ export default  {
     AppSectionServices,
     AppSectionPhoto,
     AppSectionCards,
-    AppSectionBanner
+    AppSectionBanner,
+    AppSectionEvents
   },
   data (){
       return {
@@ -31,6 +33,7 @@ export default  {
     <AppSectionPhoto :item="store.gallery"/>
     <AppSectionCards :item="store.cards"/>
     <AppSectionBanner/>
+    <AppSectionEvents :item="store.events"/>
 
 
 </template>
