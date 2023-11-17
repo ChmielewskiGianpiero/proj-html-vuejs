@@ -2,11 +2,15 @@
 import AppSectionServices from './AppSectionServices.vue';
 import AppSectionPhoto from './AppSectionPhoto.vue';
 import AppSectionCards from './AppSectionCards.vue';
+import AppSectionBanner from './AppSectionBanner.vue'
 import { store } from '../store';
 
 export default  {
   components:{
-    AppSectionServices,AppSectionPhoto,AppSectionCards
+    AppSectionServices,
+    AppSectionPhoto,
+    AppSectionCards,
+    AppSectionBanner
   },
   data (){
       return {
@@ -26,6 +30,7 @@ export default  {
     <AppSectionServices :item="store.educationCard"/>
     <AppSectionPhoto :item="store.gallery"/>
     <AppSectionCards :item="store.cards"/>
+    <AppSectionBanner/>
 
 
 </template>
