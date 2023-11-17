@@ -102,6 +102,17 @@ export const store = reactive ({
         title: 'World Chess Day',
         text: 'Celebrated on July 20 every year, World Chess Day is one of the biggest events at our school. Be ready for fun tournaments and big prizes. Registration is obligatory!'
       },
+    ],
+
+    news: [
+      {
+        srcPath: '/public/mt-2236-blog-img1.jpg',
+        text: 'The most common mistakes when managing personal finances'
+      },
+      {
+        srcPath: '/public/mt-2236-blog-img2.jpg',
+        text: 'Methods of the recruitment'
+      }
     ]
 }
 )
