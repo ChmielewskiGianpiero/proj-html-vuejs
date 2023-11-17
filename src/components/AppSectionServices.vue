@@ -84,6 +84,7 @@ p,li {
 }
 .row{
     gap: 60px;
+    flex-wrap: wrap;
 }
 
 .col-6{

@@ -53,6 +53,21 @@ export const store = reactive ({
         {
           text: 'Learn to pay attention to detail'
         }
-  ]
+    ],
+    
+    gallery: [
+      {
+        src: '/public/mt-2236-home-gallery1.jpg'
+      },
+      {
+        src: '/public/mt-2236-home-gallery2.jpg'
+      },
+      {
+        src: '/public/mt-2236-home-gallery3.jpg'
+      },
+      {
+        src: '/public/mt-2236-home-gallery4.jpg'
+      }
+    ]
 }
 )

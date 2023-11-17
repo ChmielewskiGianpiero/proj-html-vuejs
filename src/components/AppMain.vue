@@ -1,10 +1,11 @@
 <script>
 import AppSectionServices from './AppSectionServices.vue';
+import AppSectionPhoto from './AppSectionPhoto.vue';
 import { store } from '../store';
 
 export default  {
   components:{
-    AppSectionServices
+    AppSectionServices,AppSectionPhoto
   },
   data (){
       return {
@@ -22,6 +23,9 @@ export default  {
 
 <template>
     <AppSectionServices :item="store.educationCard"/>
+    <AppSectionPhoto :item="store.gallery"/>
+
+
 </template>
 
 <style lang="scss" scoped>
@@ -30,6 +34,5 @@ export default  {
 .container{
     max-width: 1920px;
     margin: 0 auto;
-
 }
 </style>
